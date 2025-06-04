@@ -1,4 +1,4 @@
-# app.py
+# Fake Job offer detector web app
 import streamlit as st
 import pickle
 import re
@@ -21,7 +21,6 @@ def clean_text(text):
 st.title("🕵️‍♂️ Fake Job Offer Detector")
 st.write("Enter a job offer to check if it's a real or fake job posting:")
 
-# Increased height of text area for better input experience
 user_input = st.text_area("Job Offer", height=300)
 
 if st.button("Predict"):

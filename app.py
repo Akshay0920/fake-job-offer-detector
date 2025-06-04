@@ -19,17 +19,17 @@ def clean_text(text):
 
 # Streamlit App UI
 st.title("🕵️‍♂️ Fake Job Offer Detector")
-st.write("Enter a job description to check if it's a real or fake job posting:")
+st.write("Enter a job offer to check if it's a real or fake job posting:")
 
 # Increased height of text area for better input experience
-user_input = st.text_area("Job Description", height=300)
+user_input = st.text_area("Job Offer", height=300)
 
 if st.button("Predict"):
     if user_input.strip() == "":
-        st.warning("Please enter a job description to analyze.")
+        st.warning("Please enter a job offer to analyze.")
     else:
         cleaned = clean_text(user_input)
         vectorized = vectorizer.transform([cleaned])
         prediction = model.predict(vectorized)[0]
-        label = "✅ Real Job Posting" if prediction == 0 else "🚫 Fake Job Posting"
+        label = "✅ Genuine Offer" if prediction == 0 else "🚫 Fake Offer"
         st.success(label)

@@ -17,7 +17,7 @@ def clean_text(text):
     stopwords = set(["the", "is", "at", "which", "on", "and", "a", "an", "in", "to", "for", "with", "that", "of"])
     return ' '.join([word for word in text.split() if word not in stopwords])
 
-# Streamlit App UI
+# App UI
 st.title("🕵️‍♂️ Fake Job Offer Detector")
 st.write("Enter a job offer to check if it's a real or fake job posting:")
 

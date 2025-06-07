@@ -19,7 +19,7 @@ def clean_text(text):
 
 # Streamlit App UI
 st.title("🕵️‍♂️ Fake Job Offer Detector")
-st.write("Enter a job offer to check if it's a real or fake:")
+st.write("Enter a job offer to check if it's a real or fake job posting:")
 
 user_input = st.text_area("Job Offer", height=300)
 

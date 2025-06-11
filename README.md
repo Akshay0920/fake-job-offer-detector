@@ -4,7 +4,7 @@ A machine learning-based application that identifies fraudulent job postings usi
 
 ---
 
-## 🗃Dataset
+## Dataset
 
 - **Source:** [Kaggle – Fake Job Postings Dataset](https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction)
 - **Fields used:** title, description, company profile, requirements, benefits, fraud_label
